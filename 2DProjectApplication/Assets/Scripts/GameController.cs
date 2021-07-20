@@ -6,7 +6,7 @@ using UnityEngine;
 public class GameController : MonoBehaviour
 {
     public Text[] buttonList;
-    public string playerSide;
+    private string playerSide;
     void Awake()
     {
         SetGameControllerReferenceOnButtons();
@@ -26,9 +26,60 @@ public class GameController : MonoBehaviour
     }
     public void EndTurn()
     {
-        if(buttonList [0] .text == playerSide && buttonList [1] .text == playerSide && buttonList [2].text == playerSide)
+        if (buttonList[0].text == playerSide && buttonList[1].text == playerSide && buttonList[2].text == playerSide)
         {
-
+            GameOver();
         }
+
+        if (buttonList[3].text == playerSide && buttonList[4].text == playerSide && buttonList[5].text == playerSide)
+        {
+            GameOver();
+        }
+
+        if (buttonList[6].text == playerSide && buttonList[7].text == playerSide && buttonList[8].text == playerSide)
+        {
+            GameOver();
+        }
+
+        if (buttonList[0].text == playerSide && buttonList[3].text == playerSide && buttonList[6].text == playerSide)
+        {
+            GameOver();
+        }
+
+        if (buttonList[1].text == playerSide && buttonList[4].text == playerSide && buttonList[7].text == playerSide)
+        {
+            GameOver();
+        }
+
+        if (buttonList[2].text == playerSide && buttonList[5].text == playerSide && buttonList[8].text == playerSide)
+        {
+            GameOver();
+        }
+
+        if (buttonList[0].text == playerSide && buttonList[4].text == playerSide && buttonList[8].text == playerSide)
+        {
+            GameOver();
+        }
+
+        if (buttonList[2].text == playerSide && buttonList[4].text == playerSide && buttonList[6].text == playerSide)
+        {
+            GameOver();
+        }
+
+        ChangeSide();
+
+
+    }
+    void GameOver()
+    {
+        for (int i = 0; i < buttonList.Length; i++)
+        {
+            buttonList[i].GetComponentInParent<Button>().interactable = false;  
+        }
+    }
+
+    void ChangeSide()
+    {
+        playerSide = (playerSide == "X") ? "O" : "X"; // Note: Capital Letters for "X" and "O"
     }
 }

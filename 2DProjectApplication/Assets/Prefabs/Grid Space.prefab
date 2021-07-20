@@ -78,7 +78,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: X
+  m_Text: 
 --- !u!1 &8836954185679351122
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,4 +227,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 3005154945778231376}
   buttonText: {fileID: 4009582601274740234}
-  playerSide: X
