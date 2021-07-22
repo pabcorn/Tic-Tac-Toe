@@ -227,3 +227,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   button: {fileID: 3005154945778231376}
   buttonText: {fileID: 4009582601274740234}
+  playerSide: X

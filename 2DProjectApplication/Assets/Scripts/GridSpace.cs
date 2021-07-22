@@ -6,14 +6,27 @@ using UnityEngine;
 
 public class GridSpace : MonoBehaviour
 {
-    [Header("Button")]
-    [Tooltip("insert button in here for player can click.")] public Button button;
-    [Tooltip("insert Text button.")] public Text buttonText;
+    //public Button button;
+    //public Text buttonText;
+    //public string playerSide;
+    //private GameController gameController;
+    //public void SetGameOnController(GameController controller)
+    //{
+    //    gameController = controller;
+    //}
 
+    //public void SetSpace()
+    //{
+    //    buttonText.text = gameController.GetPlayerSide();
+    //    button.interactable = false;
+    //    gameController.EndTurn();
+    //}
+    public Button button;
+    public Text buttonText;
 
     private GameController gameController;
 
-    public void SetGameOnController(GameController controller)
+    public void SetGameControllerReference(GameController controller)
     {
         gameController = controller;
     }
