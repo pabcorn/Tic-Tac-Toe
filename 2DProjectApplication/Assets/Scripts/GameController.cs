@@ -206,6 +206,8 @@
 //        playerO.text.color = inactivePlayerColor.textColor; //inactivePlayerColor.textColor;
 //    }
 //}
+/*เป็นโค้ดที่้เขียนเรียงลำดับพลาด*/
+
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
